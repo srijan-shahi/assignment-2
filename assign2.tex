@@ -1,0 +1,36 @@
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{bigints}
+\DeclareMathOperator{\di}{d\!}
+
+\begin{document}
+	\title{\textbf{AI1110 Assignment 2} }
+	\author{\textbf{srijan shahi}\\\textbf{BT21BTECH11007}\\ ICSE Grade 12 2019 paper}
+	\maketitle
+	
+	{\section*{Question 1}}
+	
+	{\large \underline{Question}:\newline}
+	
+	Evaluate:
+	\begin{equation}
+		\int_{0}^{{\pi/4}}  \log(1 + \tan\theta)\di \theta
+	\end{equation}\\
+	
+	{\large \underline{Solution}:}\\
+	 	\begin{equation}
+	 I=\int_{0}^{{\pi/4}}  \log(1 + \tan\theta)\di \theta
+	 \end{equation}\\
+	\begin{align}
+     \implies I &= \int_{0}^{{\pi/4}}  \log(1 + \tan (\pi/4 - \theta)	)\di \theta\\
+     \implies I &= \int_{0}^{{\pi/4}}  \log2- log(1 + \tan\theta)	)\di \theta\\
+     \implies 2I &= \int_{0}^{{\pi/4}}  \log2 \di \theta\\
+     &={\log 2} \left[\theta \right]^{\pi/4}_{0}\\
+	        	&= {\log 2}(\pi/4 - 0)\\
+	\implies 2I &=\dfrac{{\pi} ({\log 2})}{4}  \\
+	\implies I  &=  \dfrac{{\pi} ({\log 2})}{8}
+		\end{align}
+	
+\end{document}
